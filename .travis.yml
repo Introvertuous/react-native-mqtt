@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- stable
+cache:
+  yarn: true
+  directories:
+  - node_modules
+deploy:
+  provider: npm
+  email: theramin108@gmail.com
+  api_key:
+    secure: XwWPFLgLUmk7050x9PzrHBOMICLO6yqCUJjNAaSU8P5cDvQpKGHfW8rc4OxgJDMbqA3mrQzlSSaCh8VHx0H6TjNcwHw5cT5fJiBq/wB3cZ7tR8FSCGS0koq0usFq0MgLMSgR8Aqz20Nd31JYarwaTS+E4TwmAN5/A/woptNaGG2Ek0xRVCKciLNQrUSrc4+/gLcVDiMyU4NvEFBmnBpbrtlrh2yiJ/U3G6NyvWdGyOgCvIPNPOMsrze/oj3lpRYRfs2IXoyQxkUeP8PU2GZANrz9W1B9QHwArirPAS71QAIMm2iObbnDIvVGzQYSZrQ4+eZs218Ufw0uaEI0go8pNCwZ25/ks7br3UMAQE1evLQMDLphyBCHHTQEtB7K0imZ5CEdhA1b/l01/oz9gLdp3EMuk3sEFV+UQ6FoV6m1NhYLpqJxnuAb+4oh5PT2oPmNfofqvGxdAlzE0N0Zvy6SI/Auy/z43+GG06mPlPzqbW8BQLG86/PxRLpcwwQlcNxC1MnKzRyAJiW5GUBUgTazWArTu5s4zbVOA1uh3vG7P4sHJ9ZpCqqMZmCH6zLohxbVbxUaCwjbvoFnIfj8jcVNssbVwYLl4IGmgf1MHBPKbrKXOigBKq6WnD8NqOB2rg5TqnOSeSgiNNaa6YVA0slMmYvNwt+kDVgHdBpUIiG34x4=
+  on:
+    repo: Introvertuous/react_native_mqtt
+    skip_cleanup: true
