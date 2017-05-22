@@ -1,12 +1,27 @@
 {
   "name": "react_native_mqtt",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Drop in mqtt client for react native.",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Introvertuous/react_native_mqtt"
+    "type": "git",
+    "url": "https://github.com/Introvertuous/react_native_mqtt"
   },
   "dependencies": {
     "react-native-storage": "^0.1.2"
+  },
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@types/jest": "^19.2.3",
+    "jest-cli": "^20.0.3",
+    "standard-version": "^4.0.0",
+    "typescript": "^2.3.2"
+  },
+  "scripts": {
+    "test": "tsc && jest dist",
+    "release": "tsc && standard-version"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "mapCoverage": true
   }
 }
