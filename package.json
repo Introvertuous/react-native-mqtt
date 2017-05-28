@@ -9,19 +9,25 @@
   "dependencies": {
     "react-native-storage": "^0.1.2"
   },
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "devDependencies": {
+    "@types/node": "^7.0.21",
     "@types/jest": "^19.2.3",
     "jest-cli": "^20.0.3",
+    "typedoc": "^0.7.1",
+    "tslint": "5.2.0",
+    "tslint-config-standard": "^5.0.2",
+    "tslint-react": "^3.0.0",
     "standard-version": "^4.0.0",
     "typescript": "^2.3.2"
   },
   "scripts": {
-    "test": "tsc && jest dist",
-    "release": "tsc && standard-version"
+    "docs": "typedoc --out docs src",
+    "build": "tsc",
+    "test": "jest dist",
+    "release": "yarn build && yarn docs && standard-version"
   },
   "jest": {
-    "testEnvironment": "node",
-    "mapCoverage": true
+    "verbose": true
   }
 }
