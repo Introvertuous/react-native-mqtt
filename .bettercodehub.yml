@@ -1,0 +1,4 @@
+languages:
+- typescript
+exclude:
+- /docs/*
