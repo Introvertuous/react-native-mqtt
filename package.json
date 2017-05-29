@@ -10,22 +10,32 @@
     "react-native-storage": "^0.1.2"
   },
   "main": "dist/src/index.js",
-  "devDependencies": {
-    "@types/node": "^7.0.21",
-    "@types/jest": "^19.2.3",
-    "jest-cli": "^20.0.3",
-    "typedoc": "^0.7.1",
-    "tslint": "5.2.0",
-    "tslint-config-standard": "^5.0.2",
-    "tslint-react": "^3.0.0",
-    "standard-version": "^4.0.0",
-    "typescript": "^2.3.2"
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "tsx",
+      "quiet": true
+    }
   },
   "scripts": {
-    "docs": "typedoc --out docs src",
+    "watch": "npm-watch",
     "build": "tsc",
+    "lint": "tslint src/**/*.ts{,x} __tests__/**/*.ts{,x}",
     "test": "jest dist",
-    "release": "yarn build && yarn docs && standard-version"
+    "release": "yarn build && typedoc --out docs src"
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.3",
+    "@types/node": "^7.0.21",
+    "jest-cli": "^20.0.3",
+    "npm-watch": "^0.1.9",
+    "tslint": "5.2.0",
+    "tslint-config-airbnb": "^5.0.1",
+    "tslint-react": "^3.0.0",
+    "typedoc": "^0.7.1",
+    "typescript": "^2.3.2"
   },
   "jest": {
     "verbose": true

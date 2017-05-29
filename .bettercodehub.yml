@@ -3,3 +3,4 @@ languages:
 exclude:
 - /docs/*
 - /src/mqttws31.js
+- /example/*

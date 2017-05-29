@@ -1,6 +1,5 @@
 'use strict';
 
-test('ex', () => {
-    expect("hello").toBe('hello');
-    expect("world").toBe('world');
+test('first', () => {
+  expect(42).toBe(42);
 });
