@@ -22,7 +22,6 @@
   "scripts": {
     "watch": "npm-watch",
     "build": "tsc",
-    "lint": "tslint src/**/*.ts{,x} __tests__/**/*.ts{,x}",
     "test": "jest dist",
     "release": "yarn build && typedoc --out docs src"
   },
@@ -31,9 +30,6 @@
     "@types/node": "^7.0.21",
     "jest-cli": "^20.0.3",
     "npm-watch": "^0.1.9",
-    "tslint": "5.2.0",
-    "tslint-config-airbnb": "^5.0.1",
-    "tslint-react": "^3.0.0",
     "typedoc": "^0.7.1",
     "typescript": "^2.3.2"
   },
