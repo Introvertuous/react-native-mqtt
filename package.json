@@ -10,17 +10,7 @@
     "react-native-storage": "^0.1.2"
   },
   "main": "dist/src/index.js",
-  "watch": {
-    "build": {
-      "patterns": [
-        "src"
-      ],
-      "extensions": "tsx",
-      "quiet": true
-    }
-  },
   "scripts": {
-    "watch": "npm-watch",
     "build": "tsc",
     "test": "jest dist",
     "release": "yarn build && typedoc --out docs src"
@@ -29,7 +19,6 @@
     "@types/jest": "^19.2.3",
     "@types/node": "^7.0.21",
     "jest-cli": "^20.0.3",
-    "npm-watch": "^0.1.9",
     "typedoc": "^0.7.1",
     "typescript": "^2.3.2"
   },
