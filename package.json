@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest dist",
-    "release": "yarn build && typedoc --out docs src"
+    "release": "npm run build && typedoc --out docs src"
   },
   "devDependencies": {
     "@types/jest": "^19.2.3",
