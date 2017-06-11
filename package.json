@@ -10,11 +10,12 @@
     "react-native-storage": "^0.1.2"
   },
   "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc && copyfiles src/mqttws31.js dist",
     "test": "jest dist",
-    "release": "npm run build && typedoc --out docs src"
+    "prepublish": "npm run build && typedoc --out docs --exclude **/*.test.ts src"
   },
   "devDependencies": {
     "@types/jest": "^19.2.3",
