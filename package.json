@@ -1,6 +1,6 @@
 {
   "name": "react_native_mqtt",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Drop in mqtt client for react native.",
   "repository": {
     "type": "git",
