@@ -15,7 +15,8 @@
     "dev": "tsc --watch",
     "build": "tsc && copyfiles src/mqttws31.js dist",
     "test": "jest dist",
-    "prepublish": "npm run build && typedoc --out docs --exclude **/*.test.ts src"
+    "docs": "typedoc --out docs --exclude **/*.test.ts src",
+    "prepublish": "npm run build && npm run docs"
   },
   "devDependencies": {
     "@types/jest": "^19.2.3",
