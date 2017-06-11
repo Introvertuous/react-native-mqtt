@@ -11,13 +11,15 @@
   },
   "main": "dist/src/index.js",
   "scripts": {
-    "build": "tsc",
+    "dev": "tsc --watch",
+    "build": "tsc && copyfiles src/mqttws31.js dist",
     "test": "jest dist",
     "release": "npm run build && typedoc --out docs src"
   },
   "devDependencies": {
     "@types/jest": "^19.2.3",
     "@types/node": "^7.0.21",
+    "copyfiles": "^1.2.0",
     "jest-cli": "^20.0.3",
     "typedoc": "^0.7.1",
     "typescript": "^2.3.2"

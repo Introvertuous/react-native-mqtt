@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
-		"allowJs": true,
-    "outDir": "dist",
-    "module": "commonjs",
     "target": "es6",
-    "sourceMap": true,
-    "removeComments": true,
-    "noImplicitAny": false,
-    "jsx": "react"
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./dist",
+    //"strict": true, // TODO: set this to true, right now it is necessary for localStorage usage with mqttws31
+    "noImplicitUseStrict" : true, // TODO: remove this, see above
+    "noImplicitAny": false
   },
   "exclude": [
 		"node_modules",
