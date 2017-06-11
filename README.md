@@ -10,7 +10,7 @@ To install, use npm:
 npm install react_native_mqtt --save
 ```
 
-## [Documentation](https://introvertuous.github.io/react_native_mqtt/)
+## [Documentation](https://introvertuous.github.io/react_native_mqtt/docs)
 
 ## Usage
 
