@@ -45,7 +45,7 @@ function onMessageArrived(message) {
   console.log("onMessageArrived:"+message.payloadString);
 }
 
-var client = new Paho.MQTT.Client('test.mosquitto.org', 8080, 'unique_client_name');
+var client = new Paho.MQTT.Client('broker.hivemq.com', 8000, 'unique_client_name');
 client.onConnectionLost = onConnectionLost;
 client.onMessageArrived = onMessageArrived;
 client.connect({onSuccess:onConnect});
