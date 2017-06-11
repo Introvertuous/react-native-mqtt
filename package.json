@@ -16,7 +16,7 @@
     "build": "tsc && copyfiles src/mqttws31.js dist",
     "test": "jest dist",
     "docs": "typedoc --out docs --exclude **/*.test.ts src",
-    "prepush": "npm run docs",
+    "prepush": "npm run docs && git add docs && git commit -m 'Docs Commit'",
     "prepublish": "npm run build"
   },
   "devDependencies": {
