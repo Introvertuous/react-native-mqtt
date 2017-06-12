@@ -14,10 +14,7 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc && copyfiles src/mqttws31.js dist",
-    "test": "jest dist",
-    "docs": "typedoc --out docs --exclude **/*.test.ts src",
-    "prepush": "npm run docs && git add docs && git commit -m \"Docs Commit\"",
-    "prepublish": "npm run build"
+    "test": "jest dist"
   },
   "devDependencies": {
     "@types/jest": "^19.2.3",
@@ -25,7 +22,6 @@
     "copyfiles": "^1.2.0",
     "husky": "^0.13.4",
     "jest-cli": "^20.0.3",
-    "typedoc": "^0.7.1",
     "typescript": "^2.3.2"
   },
   "jest": {

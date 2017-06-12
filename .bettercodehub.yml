@@ -1,6 +1,5 @@
 languages:
 - typescript
 exclude:
-- /docs/*
 - /src/mqttws31.js
 - /example/*
