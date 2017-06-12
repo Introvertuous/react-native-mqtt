@@ -1,5 +1,5 @@
-'use strict';
+("use strict");
 
-test('first', () => {
+test("first", () => {
   expect(42).toBe(42);
 });
