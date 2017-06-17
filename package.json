@@ -9,11 +9,10 @@
   "dependencies": {
     "react-native-storage": "^0.1.2"
   },
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc && copyfiles src/mqttws31.js dist",
+    "build": "tsc",
     "test": "",
     "precommit": "lint-staged"
   },
@@ -25,7 +24,6 @@
   },
   "devDependencies": {
     "@types/node": "^7.0.21",
-    "copyfiles": "^1.2.0",
     "husky": "^0.13.4",
     "lint-staged": "^3.6.1",
     "prettier": "^1.4.4",
