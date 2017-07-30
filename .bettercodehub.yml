@@ -1,5 +1,0 @@
-languages:
-- typescript
-exclude:
-- /src/mqttws31.js
-- /example/*
