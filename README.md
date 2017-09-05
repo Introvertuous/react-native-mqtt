@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Introvertuous/react_native_mqtt.svg?branch=master)](https://travis-ci.org/Introvertuous/react_native_mqtt)
+[![Build Status](https://travis-ci.org/Introvertuous/react-native-mqtt.svg?branch=master)](https://travis-ci.org/Introvertuous/react-native-mqtt)
 [![npm version](https://badge.fury.io/js/react_native_mqtt.svg)](https://badge.fury.io/js/react_native_mqtt)
 
 # React Native Mqtt
@@ -56,11 +56,13 @@ To run the example, first make sure you have properly setup your env for react n
 Then start the tsc compiler to watch and re-build changes, start up the js packager, and run android or ios.
 ```
 cd /react-native-mqtt/
+npm install
 npm run dev
 ```
 ```
 cd /react-native-mqtt/example/
-npm start -- --reset-cache
+yarn
+yarn start -- --reset-cache
 react-native run-android OR react-native run-ios
 ```
 
