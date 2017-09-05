@@ -3,7 +3,7 @@
 
 # React Native Mqtt
 
-This package is a wrapper around the javascript implementation of the [paho mqtt client library](https://eclipse.org/paho/clients/js/) to provide drop in compatibility with react native. If you happen to be running your own mqtt broker, it must support websockets for a connection to be possible. [Mosquitto](https://mosquitto.org/) does not support websockets out of the box and will require some extra work. Another broker that does have support for websockets is [aedes](https://github.com/mcollina/aedes), which is the broker I use personally.
+This package is a wrapper around the javascript implementation of the [paho mqtt client library](https://eclipse.org/paho/clients/js/) to provide drop in compatibility with react native. If you happen to be running your own mqtt broker, it must support websockets for a connection to be possible.
 
 ## Install
 
@@ -31,9 +31,6 @@ init({
 
 function onConnect() {
   console.log("onConnect");
-  var message = new Paho.MQTT.Message("Hello");
-  message.destinationName = "/World";
-  client.send(message);
 }
 
 function onConnectionLost(responseObject) {
@@ -46,22 +43,25 @@ function onMessageArrived(message) {
   console.log("onMessageArrived:"+message.payloadString);
 }
 
-var client = new Paho.MQTT.Client('broker.hivemq.com', 8000, 'unique_client_name');
+const client = new Paho.MQTT.Client('broker.hivemq.com', 8000, 'unique_client_name');
 client.onConnectionLost = onConnectionLost;
 client.onMessageArrived = onMessageArrived;
 client.connect({onSuccess:onConnect});
 ```
 
-This is how you can use the [aedes](https://github.com/mcollina/aedes) broker to handle websocket and standard connections.
-```javascript
-var net = require('net');
-var aedes = require('aedes');
-var websocket = require('websocket-stream');
+### Example
 
-exports.listen = function() {
-  aedes = aedes();
-  var server = net.createServer(aedes.handle);
-  server.listen(1883);
-  websocket.createServer({port: 8080}, aedes.handle);
-}
+To run the example, first make sure you have properly setup your env for react native development in ios and/or android: https://facebook.github.io/react-native/releases/0.21/docs/getting-started.html.
+
+Then start the tsc compiler to watch and re-build changes, start up the js packager, and run android or ios.
 ```
+cd /react-native-mqtt/
+npm run dev
+```
+```
+cd /react-native-mqtt/example/
+npm start -- --reset-cache
+react-native run-android OR react-native run-ios
+```
+
+Lastly, once you have the example running, you can use the following mqtt app to verify that everything works as expected by publishing a few messages to the "WORLD" topic: http://www.hivemq.com/demos/websocket-client/
