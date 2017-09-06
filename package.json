@@ -13,20 +13,10 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "test": "",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "prettier --parser=typescript --write",
-      "git add"
-    ]
+    "test": ""
   },
   "devDependencies": {
     "@types/node": "^7.0.21",
-    "husky": "^0.13.4",
-    "lint-staged": "^3.6.1",
-    "prettier": "^1.4.4",
     "typescript": "^2.3.2"
   }
 }
