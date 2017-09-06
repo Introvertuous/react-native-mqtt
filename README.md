@@ -46,7 +46,7 @@ function onMessageArrived(message) {
 const client = new Paho.MQTT.Client('iot.eclipse.org', 443, 'uname');
 client.onConnectionLost = onConnectionLost;
 client.onMessageArrived = onMessageArrived;
-client.connect({onSuccess:onConnect});
+client.connect({ onSuccess:onConnect, useSSL: true });
 ```
 
 ### Example
