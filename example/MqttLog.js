@@ -21,10 +21,10 @@ export default class MqttLog extends Component {
   constructor(props) {
     super(props);
 
-    const client = new Paho.MQTT.Client('broker.hivemq.com', 8000, 'uname');
+    const client = new Paho.MQTT.Client('iot.eclipse.org', 443, 'uname');
     client.onConnectionLost = this.onConnectionLost;
     client.onMessageArrived = this.onMessageArrived;
-    client.connect({ onSuccess: this.onConnect });
+    client.connect({ onSuccess: this.onConnect, useSSL: true });
 
     this.state = {
       text: ['...'],

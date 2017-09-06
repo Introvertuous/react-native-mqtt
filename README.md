@@ -43,7 +43,7 @@ function onMessageArrived(message) {
   console.log("onMessageArrived:"+message.payloadString);
 }
 
-const client = new Paho.MQTT.Client('broker.hivemq.com', 8000, 'unique_client_name');
+const client = new Paho.MQTT.Client('iot.eclipse.org', 443, 'uname');
 client.onConnectionLost = onConnectionLost;
 client.onMessageArrived = onMessageArrived;
 client.connect({onSuccess:onConnect});
