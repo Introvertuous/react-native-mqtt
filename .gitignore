@@ -15,3 +15,5 @@ build
 .env
 npm-debug.log
 .vscode
+
+dist
