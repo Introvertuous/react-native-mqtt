@@ -4,7 +4,7 @@
   "description": "Drop in mqtt client for react native.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Introvertuous/react_native_mqtt"
+    "url": "https://github.com/Introvertuous/react-native-mqtt"
   },
   "dependencies": {
     "react-native-storage": "^0.1.2"
