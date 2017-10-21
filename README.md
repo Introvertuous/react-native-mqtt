@@ -67,4 +67,8 @@ yarn start --reset-cache
 react-native run-android OR react-native run-ios
 ```
 
-Lastly, once you have the example running, you can use the following mqtt app to verify that everything works as expected by publishing a few messages to the "WORLD" topic: http://www.hivemq.com/demos/websocket-client/
+Lastly, once you have the example running, you can use [this](http://www.hivemq.com/demos/websocket-client/) web app to verify that everything works as expected by publishing messages to the "WORLD" topic, using the config below.
+
+Host: iot.eclipse.org
+Port: 443
+SSL: true
