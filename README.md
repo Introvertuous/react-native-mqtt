@@ -57,13 +57,15 @@ To run the example, first make sure you have properly setup your env for react n
 Then start the tsc compiler to watch and re-build changes, start up the js packager, and run android or ios.
 ```
 cd /react-native-mqtt/
-npm install
-npm run dev
+yarn
+yarn run dev
 ```
 ```
 cd /react-native-mqtt/example/
 yarn
 yarn start --reset-cache
+```
+cd /react-native-mqtt/example/
 react-native run-android OR react-native run-ios
 ```
 
