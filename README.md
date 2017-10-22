@@ -65,6 +65,7 @@ cd /react-native-mqtt/example/
 yarn
 yarn start --reset-cache
 ```
+```
 cd /react-native-mqtt/example/
 react-native run-android OR react-native run-ios
 ```
