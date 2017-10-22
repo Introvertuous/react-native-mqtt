@@ -12,8 +12,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc",
-    "test": ""
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^7.0.21",
