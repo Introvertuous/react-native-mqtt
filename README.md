@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Introvertuous/react-native-mqtt.svg?branch=master)](https://travis-ci.org/Introvertuous/react-native-mqtt)
+[![Build Status](https://travis-ci.org/Introvertuous/react_native_mqtt.svg?branch=master)](https://travis-ci.org/Introvertuous/react_native_mqtt)
 [![npm version](https://badge.fury.io/js/react_native_mqtt.svg)](https://badge.fury.io/js/react_native_mqtt)
 
 # React Native Mqtt
