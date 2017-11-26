@@ -6,8 +6,6 @@ notifications:
   email: false
 node_js:
   - '8'
-before_script:
-  - npm prune
 script:
   - npm run build
   - npm run test
