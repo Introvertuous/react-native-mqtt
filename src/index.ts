@@ -1,4 +1,4 @@
-import Storage from 'react-native-storage';
+import reactNativeStorage from 'react-native-storage';
 import './mqttws31';
 
 /**
@@ -6,5 +6,5 @@ import './mqttws31';
  * @param options {object}
  */
 export default function init(options: object): void {
-  localStorage = new Storage(options);
+  localStorage = new reactNativeStorage(options);
 }
