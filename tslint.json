@@ -1,3 +1,0 @@
-{
-  "extends": ["tslint-eslint-rules", "tslint-config-prettier"]
-}
