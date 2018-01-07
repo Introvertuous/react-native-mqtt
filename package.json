@@ -13,8 +13,7 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "semantic-release":
-      "semantic-release pre && yarn build && yarn publish && semantic-release post"
+    "semantic-release": "semantic-release pre && yarn build && yarn publish && semantic-release post"
   },
   "devDependencies": {
     "@types/node": "^7.0.21",
@@ -23,6 +22,7 @@
     "tslint": "^5.8.0",
     "tslint-config-airbnb": "^5.4.2",
     "tslint-config-prettier": "^1.6.0",
+    "tslint-eslint-rules": "^4.1.1",
     "typescript": "^2.3.2"
   }
 }
