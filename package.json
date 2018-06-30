@@ -1,6 +1,6 @@
 {
   "name": "react_native_mqtt",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "description": "Drop in mqtt client for react native.",
   "repository": {
     "type": "git",
@@ -13,12 +13,14 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@types/node": "^7.0.21",
     "prettier": "^1.7.4",
     "typescript": "^2.3.2",
-    "travis-deploy-once": "^5.0.1"
+    "travis-deploy-once": "^5.0.1",
+    "semantic-release": "^15.6.0"
   }
 }
