@@ -13,12 +13,12 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "semantic-release": "semantic-release pre && yarn build && yarn publish && semantic-release post"
+    "travis-deploy-once": "travis-deploy-once"
   },
   "devDependencies": {
     "@types/node": "^7.0.21",
     "prettier": "^1.7.4",
-    "semantic-release": "^8.2.0",
-    "typescript": "^2.3.2"
+    "typescript": "^2.3.2",
+    "travis-deploy-once": "^5.0.1"
   }
 }
