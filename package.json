@@ -9,17 +9,13 @@
   "dependencies": {
     "react-native-storage": "^0.1.2"
   },
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
-    "@types/node": "^7.0.21",
     "prettier": "^1.7.4",
-    "typescript": "^2.3.2",
     "travis-deploy-once": "^5.0.1",
     "semantic-release": "^15.6.0"
   }
