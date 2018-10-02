@@ -1,7 +1,7 @@
 *
-!dist/
-!dist/*
-!dist/**/*
+!src/
+!src/*
+!src/**/*
 !definitions/
 !definitions/*
 !*.ts
